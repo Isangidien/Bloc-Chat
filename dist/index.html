@@ -1,11 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="blocChat">
 <head lang="en">
     <meta charset="UTF-8">
-    <title>Bloc Base Project</title>
+    <title>Bloc Chat</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="/styles/style.css">
 </head>
 <body>
-    <script src="/scripts/app.js"></script>
+    
+<ui-view></ui-view>
+    
+    <!-- Angular -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    
+<!-- AngularFire -->
+<script src="https://cdn.firebase.com/libs/angularfire/2.0.1/angularfire.min.js"></script>
+
+    <!-- ui-router -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+
+<!-- Angulaer ui-bootstrap -->  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.min.js"></script>    
+
+    <!-- Firebase -->
+<script src="https://www.gstatic.com/firebasejs/3.6.9/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyB_0_XoERA0559xxJGa_t_2B7DzA71-0JI",
+    authDomain: "blocchat-79d74.firebaseapp.com",
+    databaseURL: "https://blocchat-79d74.firebaseio.com",
+    storageBucket: "blocchat-79d74.appspot.com",
+    messagingSenderId: "285746043058"
+  };
+  firebase.initializeApp(config);
+</script>
+
+<script src="scripts/app.js"></script>
+<script src="scripts/controllers/homeCtrl.js"></script>
+<script src="scripts/controllers/modalCtrl.js"></script>
+<script src="scripts/services/room.js"></script>
+<script src="scripts/services/modal.js"></script>
+
 </body>
 </html>

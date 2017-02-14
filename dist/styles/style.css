@@ -1,0 +1,29 @@
+.sidebar {
+	clear: both;
+	background-color: #ADD8E6;
+	height: 1000px;
+    
+}
+
+.sidebar .header {
+/*    margin: auto;*/
+	padding-top: 15px;
+}
+
+.sidebar .header .title {
+	text-align: center;
+	font-size: 30px;
+}
+
+.sidebar .header .new-chat-room {
+    text-align: center;
+}
+
+.sidebar .rooms-list {
+    margin: auto;
+	padding-top: 15px;
+}
+
+.sidebar .rooms-list .chatRooms {
+	text-align: center;*/
+}

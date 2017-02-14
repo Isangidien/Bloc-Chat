@@ -1,1 +1,19 @@
-<h1>Home Page</h1>
+<section>
+<div class="col-md-3 sidebar">
+    <div class="header">
+    <p class="title">Bloc Chat</p>
+        <div class="new-chat-room">
+        <button class="btn btn-primary" ng-click="home.open()"><strong></strong>Create New Chat Room</button>
+        </div>
+        <section class="rooms-list">
+    <div class="chatrooms">
+        <p ng-repeat="room in home.rooms">{{room.$value}}</p>
+        </div>
+    </section>
+    </div>
+    </div>
+</section>
+
+<section>
+
+</section>
