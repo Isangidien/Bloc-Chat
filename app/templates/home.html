@@ -5,15 +5,15 @@
         <div class="new-chat-room">
         <button class="btn btn-primary" ng-click="home.open()"><strong></strong>Create New Chat Room</button>
         </div>
+        
         <section class="rooms-list">
-    <div class="chatrooms">
-        <p ng-repeat="room in home.rooms">{{room.$value}}</p>
+    <div ng-repeat="room in home.rooms">
+        <a ng-click="home.createActive(this)">{{room.$value}}</a>
         </div>
+            
+         <ng-include src="'/templates/activeRoom.html'"></ng-include>
+        
     </section>
     </div>
     </div>
-</section>
-
-<section>
-
 </section>

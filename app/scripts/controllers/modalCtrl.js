@@ -1,23 +1,9 @@
 (function() {
     function modalCtrl(room, $uibModalInstance) {
+        this.newRoomName;
         
-       this.rooms = room.all;
-        this.getRoomName = function () {
-        var newRoomName = document.getElementById('roomName').value;
-            console.log(newRoomName);
-            return newRoomName;
-        }
-        
-         this.addRoom = function () {
-             console.log(this.rooms);
-           var newRoomName = this.getRoomName();
-                          console.log(this.getRoomName());
-
-             this.add = this.rooms.$add({
-                 $value: newRoomName
-        });
-             $uibModalInstance.close(event);
-             alert('Your new chat room,' + " " +  newRoomName  +  " " + 'has been created!');
+        this.addRoom = function() {
+            room.addRoom(this.newRoomName, this.cancel);
          }
        
         this.cancel = function () {
