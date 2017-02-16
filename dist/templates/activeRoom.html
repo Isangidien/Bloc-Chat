@@ -1,8 +1,9 @@
 <section>
 <div class="col-md-9 activeroom">
-    <h4>{{ home.activeRoom.room.$value }}</h4>
-    <p ng-repeat="message in home.messages">
-        <strong>{{message.userID}}:</strong>> {{ message.content}}
-    </p>
+    
+    <h4> Welcome...  {{ home.activeRoom.room.$value }}</h4>
+    <div ng-repeat="message in home.messages">
+        <strong>{{message.username}}:</strong>> {{ message.content}}
+    </div>
     </div>
     </section>

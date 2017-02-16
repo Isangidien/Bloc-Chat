@@ -7,8 +7,9 @@
         </div>
         
         <section class="rooms-list">
-    <div ng-repeat="room in home.rooms">
-        <a ng-click="home.createActive(this)">{{room.$value}}</a>
+    <div ng-repeat="room in home.rooms" >
+        <a>
+            <h5 class="rooms-list" ng-click="home.createActive(this)">{{room.$value}} </h5></a>
         </div>
             
          <ng-include src="'/templates/activeRoom.html'"></ng-include>

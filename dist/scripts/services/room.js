@@ -2,7 +2,7 @@
     function room($firebaseArray) {
         var firebaseRef = firebase.database().ref('Rooms');
         var rooms = $firebaseArray(firebaseRef);
-        var messagesRef = firebase.database().ref('messages');
+        var messageRef = firebase.database().ref('messages');
         
         function addRoom(newRoomName, closeModal) {
             rooms.$add({
@@ -12,7 +12,7 @@
         }
         
         function getMessages(roomId) {
-            var roomMessages = $firebaseArray(messagesRef.ref.orderByChild('roomId').equalTo(roomId));
+            var roomMessages = $firebaseArray(messageRef.ref.orderByChild('roomId').equalTo(roomId));
             return roomMessages;
         }
         

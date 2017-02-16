@@ -3,8 +3,8 @@
        this.rooms = room.all;
         this.activeRoom;
        
-       this.createActive = function (chat) {
-           this.activeRoom = chat;
+       this.createActive = function (Room) {
+           this.activeRoom = Room;
            this.messages = room.getMessages(this.activeRoom.room.$id);
        };
        

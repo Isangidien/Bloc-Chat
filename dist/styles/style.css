@@ -25,18 +25,13 @@
 	padding-top: 15px;
 }
 
-.sidebar .rooms-list .chatRooms {
+.sidebar .rooms-list {
 	text-align: center;*/
 }
 
-.addBtn {
-    position: absolute;
-    top: 225px;
-    left: 185px;
-}
-
 .activeroom {
-    background-color: #efefef;
-    height: 1000px;
-    float: center;
+    background-color: #efe6e6;
+    height: 500px;
+    text-align: left;
+    margin: auto;
 }
