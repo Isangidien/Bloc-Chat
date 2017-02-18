@@ -35,3 +35,13 @@
     text-align: left;
     margin: auto;
 }
+
+.error {
+    margin-top: 15px;
+    color: crimson;
+    border: 2px solid red;
+}
+
+label {
+    font-size: 1.2rem;
+}
