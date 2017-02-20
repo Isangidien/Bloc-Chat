@@ -21,9 +21,27 @@
 
 .sidebar .rooms-list {
     margin: auto;
+    font-family: sans-serif;
 	padding-top: 15px;
 }
 
-.sidebar .rooms-list .chatRooms {
+.sidebar .rooms-list {
 	text-align: center;*/
+}
+
+.activeroom {
+    background-color: #efe6e6;
+    height: 500px;
+    text-align: left;
+    margin: auto;
+}
+
+.error {
+    margin-top: 15px;
+    color: crimson;
+    border: 2px solid red;
+}
+
+label {
+    font-size: 1.2rem;
 }
