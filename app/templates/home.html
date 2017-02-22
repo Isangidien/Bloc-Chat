@@ -1,20 +1,21 @@
-<section>
-<div class="col-md-3 sidebar">
+<div> 
+     <div class="col-md-3 sidebar">
     <div class="header">
-    <p class="title">Bloc Chat</p>
+    <h1 class="title z-depth-5">Bloc Chat</h1>
         <div class="new-chat-room">
         <button class="btn btn-primary" ng-click="home.open()"><strong></strong>Create New Chat Room</button>
         </div>
         
         <section class="rooms-list">
     <div ng-repeat="room in home.rooms" >
-        <a>
-            <h5 class="rooms-list" ng-click="home.createActive(this)">{{room.$value}} </h5></a>
+        <a href="#">
+            <h5 class="rooms-list z-depth-2" ng-click="home.createActive(this)">{{room.$value}} </h5>
+        </a>
         </div>
             
          <ng-include src="'/templates/activeRoom.html'"></ng-include>
-        
+            
     </section>
     </div>
     </div>
-</section>
+</div>

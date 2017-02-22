@@ -1,9 +1,14 @@
-<section>
 <div class="col-md-9 activeroom">
     
-    <h4> Welcome...  {{ home.activeRoom.room.$value }}</h4>
+    <h4> Welcome...  {{home.userName}} to the {{ home.activeRoom.room.$value }} chatroom </h4>
     <div ng-repeat="message in home.messages">
-        <strong>{{message.username}}:</strong>> {{ message.content}}
+        <strong>{{message.userId}}:</strong>> {{ message.content}}
     </div>
     </div>
-    </section>
+    <div ng-hide="!home.activeRoom.room.$value" class = "send-message z-depth-4">
+    <form id="messageForm" name="messageForm" ng-submit="home.sendMessage(this)">
+    
+        <input class="theNewMessage" id="newMessage" ng-model="home.newMessage" type="text" name="newMessage" placeholder="Type your message here!" autocomplete="off" autofocus>
+        </form>
+    </div>
+    

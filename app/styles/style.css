@@ -1,6 +1,5 @@
 .sidebar {
 	clear: both;
-	background-color: #ADD8E6;
 	height: 1000px;
     
 }
@@ -23,15 +22,52 @@
     margin: auto;
     font-family: sans-serif;
 	padding-top: 15px;
+    text-align: center;
 }
 
 .sidebar .rooms-list {
-	text-align: center;*/
+	/*text-align: center;*/
 }
 
 .activeroom {
-    background-color: #efe6e6;
+    background-color: #e0f7fa;
     height: 500px;
     text-align: left;
     margin: auto;
+}i
+
+.error {
+    margin-top: 15px;
+    color: crimson;
+    border: 2px solid red;
+}
+
+.send-message {
+    height: 150px;
+    position: fixed;
+    bottom: 3px;
+    left: 12%;
+    background-color: lightcoral;
+    border: 5px solid #02020f;
+    border-radius: 10px 10px;
+    align-content: center;
+    width: inherit;
+    z-index: 120;
+    padding-left: 10px;
+}
+
+.send-message input {
+background-color: white;
+border-bottom: none;
+font-size: 1.5rem;
+}
+
+.send-message input:focus {
+/*    background-color: ghostwhite;*/
+    border-bottom: none;
+    font-size: 1.5rem;
+}
+
+label {
+    font-size: 1.5rem;
 }
